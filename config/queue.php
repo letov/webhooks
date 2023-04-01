@@ -71,6 +71,11 @@ return [
             'after_commit' => false,
         ],
 
+        'webhooks' => [
+            'connection' => env('WEBHOOKS_QUEUE_CONNECTION', 'sync'),
+            'name' => 'webhooks',
+        ],
+
     ],
 
     /*
